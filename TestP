@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ok</title>
+
+
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        h1{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        Enter Name : <input type="text" name="" id="sh" value="">
+        <h1 id="h1"> </h1>
+        <button id="submit" type="submit" onclick="get()" value="Submit">Enter </button>
+    </div>
+
+</body>
+<script>
+    function get() {
+        console.log("Ok");
+        let data = document.getElementById('sh');
+        if (data.value == "Anshu") {
+
+            let html = document.getElementById('container');
+            html.innerHTML = `Hello ${data.value}`;
+        }
+    }
+
+</script>
+
+</html>
